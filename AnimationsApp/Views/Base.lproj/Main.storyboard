@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a test project to introduce you with basic animation" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="FXm-Ki-5hE" customClass="SpringLabel" customModule="Spring">
+                                <rect key="frame" x="20" y="305.33333333333331" width="374" height="180.66666666666669"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animation parameters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OU-tv-cyi">
+                                <rect key="frame" x="118" y="598" width="179" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Support" translatesAutoresizingMaskIntoConstraints="NO" id="4W2-6m-YJn" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="15" y="20" width="384" height="270.33333333333331"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270.32999999999998" id="1Uf-dT-P8w"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOD-CX-YI3" customClass="SpringButton" customModule="Spring">
+                                <rect key="frame" x="20" y="646" width="374" height="60"/>
+                                <color key="backgroundColor" red="0.21835473180000001" green="0.66506552699999999" blue="0.60729837419999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="eb9-O9-kK1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Show animation">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="showAnimationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HtV-r6-F3x"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smiley.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4PR-0F-dxf" customClass="SpringImageView" customModule="Spring">
+                                <rect key="frame" x="142.33333333333331" y="502.00000000000006" width="129.33333333333331" height="128.66666666666663"/>
+                                <color key="tintColor" red="0.85770362619999996" green="0.2618981004" blue="0.57519179580000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4PR-0F-dxf" secondAttribute="height" multiplier="142:143" id="JvR-dh-t3O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89079019153890915" green="0.97262449966408726" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cOD-CX-YI3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="10i-ye-skr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cOD-CX-YI3" secondAttribute="bottom" constant="30" id="4er-mn-F3d"/>
+                            <constraint firstItem="4PR-0F-dxf" firstAttribute="top" secondItem="FXm-Ki-5hE" secondAttribute="bottom" constant="15" id="IhO-ht-uQ5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4W2-6m-YJn" secondAttribute="trailing" constant="15" id="LOM-H6-v62"/>
+                            <constraint firstItem="FXm-Ki-5hE" firstAttribute="top" secondItem="4W2-6m-YJn" secondAttribute="bottom" constant="15" id="LRb-c1-pZn"/>
+                            <constraint firstItem="4PR-0F-dxf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MD0-k3-xhH"/>
+                            <constraint firstItem="4W2-6m-YJn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="UFS-uu-dPO"/>
+                            <constraint firstItem="FXm-Ki-5hE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yzy-xT-nRr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cOD-CX-YI3" secondAttribute="trailing" constant="20" id="eJ9-Lr-BFa"/>
+                            <constraint firstItem="4W2-6m-YJn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kEv-zT-55p"/>
+                            <constraint firstItem="cOD-CX-YI3" firstAttribute="top" secondItem="4PR-0F-dxf" secondAttribute="bottom" constant="15" id="ohe-5N-mtX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FXm-Ki-5hE" secondAttribute="trailing" constant="20" id="vaS-cw-tQm"/>
+                            <constraint firstItem="4PR-0F-dxf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.378667" id="wcC-SX-Rmf"/>
+                            <constraint firstItem="4PR-0F-dxf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.176519" id="wpk-Qh-Ts2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9OU-tv-cyi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="animationButtonLabel" destination="cOD-CX-YI3" id="T58-kL-fM5"/>
+                        <outlet property="arrowImage" destination="4PR-0F-dxf" id="jgN-NO-Nhj"/>
+                        <outlet property="descriptionLabel" destination="FXm-Ki-5hE" id="aiO-uh-5lm"/>
+                        <outlet property="imageView" destination="4W2-6m-YJn" id="9Vp-0s-KbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.17733990147784"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Support" width="250" height="240"/>
+        <image name="smiley.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
